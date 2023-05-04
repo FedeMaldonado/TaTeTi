@@ -1,0 +1,125 @@
+* {
+  font-family: "Skranji", cursive;
+}
+
+body {
+  background-image: url(img/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-color: #439093;
+  user-select: none; /*SIRVE PARA QUE NO SELECCIONE LAS LETRAS*/
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #e5eaf5;
+}
+
+#contenedorGrilla {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  justify-content: center;
+}
+
+.cuadrado {
+  height: 200px;
+  width: 200px;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #e5eaf5;
+}
+
+/*Bordes de la grilla*/
+.medio {
+  border-left: 10px solid #343b3c;
+  border-right: 10px solid #343b3c;
+}
+
+.arriba {
+  border-bottom: 10px solid #343b3c;
+}
+
+.abajo {
+  border-top: 10px solid #343b3c;
+}
+
+.ganador {
+  background-color: #ff6732;
+  color: #e5eaf5;
+  transition: 0.7s ease;
+}
+
+.interfaz {
+  background-color: #343b3c;
+  color: #e5eaf5;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 10px;
+  transition: 0.7s ease;
+}
+
+button {
+  color: #343b3c;
+  border: none;
+  font-size: 25px;
+  border: 0px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  outline: none;
+}
+
+button:hover {
+  transition: 0.5s ease;
+  border: none;
+  transform: scale(1.3);
+  background-color: #ff6732;
+}
+
+/*RESPONSIVE MOVILE*/
+@media only screen and (max-width: 768px) {
+  h1 {
+    background-color: #343b3c;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 3rem;
+    color: #e5eaf5;
+  }
+
+  #contenedorGrilla {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+  }
+
+  .cuadrado {
+    height: 120px;
+    width: 120px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #e5eaf5;
+  }
+
+  .interfaz {
+    background-color: #343b3c;
+    color: #e5eaf5;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+  }
+}

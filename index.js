@@ -18,7 +18,7 @@ cuadrados.forEach((cuadrado, i) => {
     if (estadoDelJuego === "PAUSA") return;
     if (cuadrado.textContent !== "") return; //Si el cuadrado es distinto al vacio, es decir que ya tiene un valor(simbolo), no se puede cambiar.
     cuadrado.innerHTML = estadoDelJuego === "✘" ? x : o; //Escribo los simbolos
-    estadoDelJuego = estadoDelJuego === "✘" ? "𝓞" : "✘"; //Altero el turno del jugador
+    estadoDelJuego = estadoDelJuego === "✘" ? "Ｏ" : "✘"; //Altero el turno del jugador
     //Al revisar si hay un ganador, lo guardo en posicionGanadora.
     const posicionGanadora = revisarSihayGanador(); //Despues de hacer click en cada uno de los cuadrados, la funcion se ejecuta
     //Si el tipo de la posicion ganadora es igual al objeto, es decir que no es falso ni tampoco empate, alguien gano
